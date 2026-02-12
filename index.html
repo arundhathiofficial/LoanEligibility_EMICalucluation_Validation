@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Loan Eligibility & EMI</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <h1>Loan Eligibility & EMI Calculator</h1>
+
+  <div class="main-wrapper">
+
+
+    <div class="card">
+
+      <h2>Application Form</h2>
+
+      <form id="loanForm">
+
+        <div class="field">
+          <label>Applicant Name</label>
+          <input type="text" id="name">
+          <span class="error" id="nameError"></span>
+        </div>
+
+        <div class="field">
+          <label>Age</label>
+          <input type="text" id="age">
+          <span class="error" id="ageError"></span>
+        </div>
+
+        <div class="field">
+          <label>Monthly Salary</label>
+          <input type="text" id="salary">
+          <span class="error" id="salaryError"></span>
+        </div>
+
+        <div class="field">
+          <label>Loan Amount</label>
+          <input type="text" id="loan">
+          <span class="error" id="loanError"></span>
+        </div>
+
+        <div class="field">
+          <label>Loan Duration (Years)</label>
+          <input type="text" id="duration">
+          <span class="error" id="durationError"></span>
+        </div>
+
+        <div class="btn-wrapper">
+          <button type="submit">Submit</button>
+        </div>
+
+      </form>
+
+    </div>
+
+
+   
+    <div class="card">
+
+      <h2>Details Section</h2>
+      <p class="success" id="successMsg"></p>
+      <div class="details">
+        <p><strong>Name:</strong> <span id="dName"></span></p>
+        <p><strong>Annual Income:</strong> ₹<span id="dIncome"></span></p>
+        <hr>
+        <p><strong>Eligibility:</strong> <span id="dStatus"></span></p>
+        <p><strong>Total Payable:</strong> ₹<span id="dTotal"></span></p>
+        <p><strong>Monthly EMI:</strong> ₹<span id="dEmi"></span></p>
+        <hr>
+        <p><strong>EMI Category:</strong> <span id="dCategory"></span></p>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="js/validate.js"></script>
+</body>
+</html>
